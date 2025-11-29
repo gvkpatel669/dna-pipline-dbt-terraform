@@ -1761,6 +1761,17 @@ dbt_projects = [
     environment_template             = "open_lakehouse"
     job_templates                    = ["ci_parse", "cd_build"]
     ide_environment_name             = "Development"
+  },
+
+  {
+    project_name                     = "dbt_GMAS"
+    git_repo_remote_url              = "git://github.com/globalpayments-internal/dna-dbt-GMAS.git"
+    git_provider                     = "github"
+    global_snowflake_connection_name = "Snowflake_gpn_dev"
+    enable_dev_sso                   = true
+    environment_template             = "open_lakehouse"
+    job_templates                    = ["ci_parse", "cd_build"]
+    ide_environment_name             = "Development"
   }
 ]
 
